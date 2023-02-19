@@ -1,0 +1,30 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.section-header {
+    width: 100%;
+    font-size: 2rem;
+    color: variables.$color-primary;
+    position: relative;
+    margin-bottom: 40px;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 110%;
+        left: -7%;
+        width: 70%;
+        opacity: .7;
+        height: 2px;
+        background-color: variables.$color-secundary;
+    }
+
+    span {
+        color:  variables.$color-secundary;
+        font-family: variables.$font-special;
+    }
+
+    @media (max-width: "60rem") {
+        width: 90%;
+    }
+}

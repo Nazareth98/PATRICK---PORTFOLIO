@@ -1,0 +1,131 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.project-box {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    @media (max-width: "60rem") {
+        .project-info-container {
+            width: 90%;
+        }
+    }
+
+    .project-info-container {
+        z-index: 2;
+        position: absolute;
+        left: 35%;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 30rem;   
+        i {
+            @include mixins.transition;
+            &:hover {
+                color: variables.$color-primary;
+                transform: scale(1.1);
+            }
+        }
+
+        .project-info-title, .project-info-icons {
+            a {
+                margin-left: 10px;
+            }
+        }
+
+        .project-info-description {
+            background-color: variables.$color-alternate;
+            padding: 20px;
+            font-size: .9rem;
+            border-radius: .5rem;
+            margin: 10px 0;
+        }
+    }
+
+    .project-img {
+        width: 350px;
+        height: 220px;
+        border-radius: .5rem;
+        position: relative;
+        @include mixins.transition;
+        &:hover {
+            transform: translateY(-10px);
+        }
+        .img-overlay {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: variables.$color-secundary;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: .5rem;
+            opacity: 0.5;
+            @include mixins.transition;
+            cursor: pointer;
+            &:hover {
+                opacity: 0;
+            }
+
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+    }
+    span {
+        color: variables.$color-secundary;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: variables.$color-primary;
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: '60rem') {
+        flex-direction: column;
+        align-items: center;
+        span {
+            color: variables.$color-primary;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+        .project-info-container {
+            position: unset;
+            transform: translateY(0);
+            padding: 15px;
+            border-radius: .5rem;
+            background-color: variables.$color-secundary;
+        }
+        i {
+            color:variables.$color-primary ;
+        }
+    }
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    width: 100%;
+    justify-content: flex-end;
+    .project-info-title {
+        text-align: left;
+    }
+
+    .project-info-container{
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project-box {
+        justify-content: flex-end;
+    }
+}

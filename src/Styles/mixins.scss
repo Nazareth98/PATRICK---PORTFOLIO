@@ -1,0 +1,33 @@
+@use './variables';
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .2s ease-in;
+}
+
+@mixin darkenTitle {
+    color: darken(variables.$color-primary, 50)
+}
+
+@mixin button {
+    font-family: variables.$font-text;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    background-color: transparent;
+    color: variables.$color-secundary;
+    border: solid .125rem variables.$color-secundary;
+    border-radius: .188rem;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+        color: variables.$color-primary;
+        border: solid .125rem variables.$color-primary;
+    }
+}

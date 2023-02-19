@@ -1,0 +1,46 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+
+.icons-container {
+    position: fixed;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    a {
+        padding: .125rem .313rem;
+        &:hover {
+            i {
+            color: variables.$color-secundary;
+            transform: scale(1.2);
+            }
+        }
+    }
+
+    i {
+        color: variables.$color-text;
+        @include mixins.transition;
+
+    }
+
+
+    &:after {
+        content: '';
+        display: block;
+        height: 200px;
+        width: 1px;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        background-color: variables.$color-text;
+    }
+
+    @media (max-width: "70rem") {
+        display: none;
+    }
+}
