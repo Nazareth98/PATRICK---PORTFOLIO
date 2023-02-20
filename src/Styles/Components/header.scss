@@ -11,7 +11,7 @@ header {
     position: fixed;
     font-size: 1.1rem;
     background-color:variables.$color-background;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.811);
+    box-shadow: .18rem .18rem .625rem rgba(0, 0, 0, 0.811);
 
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ header {
     
     .button {
         @include mixins.button;
-        padding: 8px 10px
+        padding: .5rem .625rem
     }
     span {
         color: variables.$color-secundary;
@@ -79,7 +79,7 @@ header {
         position: absolute;
         top: 5rem;
         right: 0;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.811);
+        box-shadow: .18rem .18rem .625rem rgba(0, 0, 0, 0.811);
 
 
         ul {
@@ -89,7 +89,7 @@ header {
 
         li {
             font-size: 1.25rem;
-            margin: 5px;
+            margin: .31rem;
         }
 
         a {

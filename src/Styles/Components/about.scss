@@ -8,11 +8,11 @@
     margin-bottom: 100px;
 
     section {
-        padding: 0px 10px;
+        padding: 0 .625rem;
     }
 
     p {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     ul {
@@ -27,15 +27,16 @@
             color: variables.$color-secundary;
         }
     }
+    
     .about-box {
         @include mixins.center
     }
 
     .img-container {
-        width: 300px;
-        height: 300px;
-        border-radius: 5px;
-        box-shadow: 15px 15px 0px variables.$color-secundary;
+        width: 18.75rem;
+        height: 18.75rem;
+        border-radius: .313rem;
+        box-shadow: .938rem .938rem 0 variables.$color-secundary;
         position: relative;
         background-color: variables.$color-secundary;
         .img-overlay {
@@ -58,7 +59,7 @@
 
         }
         img {
-        border-radius: 5px;
+        border-radius: .313rem;
         height: 100%;
         }
     }

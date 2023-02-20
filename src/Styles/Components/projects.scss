@@ -5,7 +5,6 @@
 .projects-container {
     @include mixins.center;
     flex-direction: column;
-    margin-bottom: 100px;
-
+    margin-bottom: 6.25rem;
 }
 

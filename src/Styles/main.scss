@@ -30,7 +30,7 @@ body, html {
     width: 50rem;
     min-height: 90vh;
     @include mixins.center;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 1.25REM auto;
 
     @media (max-width: "60rem") {
         width: 100%;

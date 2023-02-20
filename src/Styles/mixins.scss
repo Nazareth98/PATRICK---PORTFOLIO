@@ -11,14 +11,14 @@
 }
 
 @mixin darkenTitle {
-    color: darken(variables.$color-primary, 50)
+    color: darken(variables.$color-primary, 40)
 }
 
 @mixin button {
     font-family: variables.$font-text;
     font-size: .9rem;
     font-weight: 600;
-    padding: 12px 16px;
+    padding: .75rem 1rem;
     background-color: transparent;
     color: variables.$color-secundary;
     border: solid .125rem variables.$color-secundary;

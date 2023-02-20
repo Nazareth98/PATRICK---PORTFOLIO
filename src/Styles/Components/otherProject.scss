@@ -12,7 +12,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px;
+        gap: 0.94rem;
         @media (max-width: '60rem') {
             grid-template-columns: 1fr 1fr;
             width: 90%;
@@ -22,7 +22,7 @@
         }
     }
     .button-box {
-        margin: 20px 0;
+        margin: 1.25rem 0;
         
     }
 
