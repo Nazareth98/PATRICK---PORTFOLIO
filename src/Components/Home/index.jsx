@@ -11,7 +11,7 @@ const Home = () => {
           Patrick Nazareth.
         </h1>
         <h2 data-aos="fade-up" data-aos-duration="1600" className="title">
-          Eu construo aplicações para web.
+          Eu construo aplicações para web e mais.
         </h2>
         <div
           data-aos="fade-up"
@@ -19,8 +19,8 @@ const Home = () => {
           className="home-description"
         >
           <p>
-            Sou um estudante de Análise e Desenvolvimento de Sistemas buscando
-            iniciar minha carreira na área de programação.
+            Sou um Desenvolvedor buscando consolidar-se no mercado como
+            Construtor de Softwares, Chatbot, Aplicações Web ou Mobile.
           </p>
         </div>
         <a

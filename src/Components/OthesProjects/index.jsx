@@ -9,7 +9,7 @@ const OtherProjects = () => {
   return (
     <>
       <article className="container cards-container">
-        <SectionHeader id="+ " title="Outros Projetos" />
+        <SectionHeader id="+ " title="Todos os Projetos" />
 
         <div className="cards-box">
           <Card seeMore={seeMore} />

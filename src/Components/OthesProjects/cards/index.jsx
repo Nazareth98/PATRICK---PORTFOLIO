@@ -42,7 +42,7 @@ const Card = ({ seeMore }) => {
           <i className="fa-solid fa-code"></i>
         </div>
         <div>
-          <Icons github={item.archive_url} url={false} />
+          <Icons github={item.html_url} url={false} />
         </div>
       </div>
       <div className="card-info">
