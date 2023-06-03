@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bae7cfe1.css",
-    "main.js": "/static/js/main.3de36d5d.js",
+    "main.js": "/static/js/main.f825fcb1.js",
     "static/media/imgAbout.png": "/static/media/imgAbout.b0e241729624bdc5af96.png",
     "static/media/chatBG.png": "/static/media/chatBG.2e7d53f83c5d547c73f1.png",
     "static/media/rejuvenescerBG.png": "/static/media/rejuvenescerBG.585dadad68106685e0d9.png",
@@ -9,10 +9,10 @@
     "static/media/Patrick Nazareth - Currículo.pdf": "/static/media/Patrick Nazareth - Currículo.d27407d2f5cd6c049470.pdf",
     "index.html": "/index.html",
     "main.bae7cfe1.css.map": "/static/css/main.bae7cfe1.css.map",
-    "main.3de36d5d.js.map": "/static/js/main.3de36d5d.js.map"
+    "main.f825fcb1.js.map": "/static/js/main.f825fcb1.js.map"
   },
   "entrypoints": [
     "static/css/main.bae7cfe1.css",
-    "static/js/main.3de36d5d.js"
+    "static/js/main.f825fcb1.js"
   ]
 }

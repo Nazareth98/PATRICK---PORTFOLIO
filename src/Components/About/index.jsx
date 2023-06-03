@@ -22,7 +22,7 @@ const About = () => {
             mais oportunidades no mercado.
           </p>
           <p data-aos="fade-up" data-aos-duration="1600">
-            Tenho dedicado dedicado boa parte do meu tempo a especialização em
+            Tenho dedicado boa parte do meu tempo a especialização em
             Desenvolvimento Mobile. Aqui estão algumas tecnologias com as quais
             tenho trabalhado recentemente:
           </p>
