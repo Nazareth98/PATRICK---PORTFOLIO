@@ -8,7 +8,7 @@ const About = () => {
     <article id="about" className="container about-container">
       <SectionHeader id="01." title="Sobre Mim" />
       <div className="about-box">
-        <section>
+        <section className="about-text-container">
           <p data-aos="fade-up" data-aos-duration="1000">
             Olá, seja bem-vindo(a)! Meu nome é Patrick e sou apaixonado pelos
             desafios que a programação me proporciona. Meu interesse pelo
@@ -35,7 +35,7 @@ const About = () => {
             <li>TypeScript</li>
           </ul>
         </section>
-        <section>
+        <section className="about-img-container">
           <div
             data-aos="fade-left"
             data-aos-duration="1200"

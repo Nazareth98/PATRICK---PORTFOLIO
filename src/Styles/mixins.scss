@@ -1,33 +1,32 @@
-@use './variables';
+@use "./variables";
 
 @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin transition {
-    transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 @mixin darkenTitle {
-    color: darken(variables.$color-primary, 40)
+  color: darken(variables.$color-primary, 40);
 }
 
 @mixin button {
-    font-family: variables.$font-text;
-    font-size: .9rem;
-    font-weight: 600;
-    padding: .75rem 1rem;
-    background-color: transparent;
-    color: variables.$color-secundary;
-    border: solid .125rem variables.$color-secundary;
-    border-radius: .188rem;
-    cursor: pointer;
-    @include transition;
+  font-family: variables.$font-text;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  background-color: variables.$color-secundary;
+  color: variables.$color-background;
+  border: solid 0.125rem variables.$color-secundary;
+  border-radius: 0.188rem;
+  cursor: pointer;
+  @include transition;
 
-    &:hover {
-        color: variables.$color-primary;
-        border: solid .125rem variables.$color-primary;
-    }
+  &:hover {
+    color: variables.$color-primary;
+  }
 }

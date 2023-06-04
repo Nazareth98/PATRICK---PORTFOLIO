@@ -111,13 +111,24 @@
 
 .left {
   text-align: right;
+  .project-img {
+    animation: project-img-animation 9s ease-in-out infinite;
+  }
+
+  .project-info-title {
+    animation: project-title-animation 10s ease-in-out infinite;
+  }
 }
 
 .right {
   width: 100%;
   justify-content: flex-end;
+  .project-img {
+    animation: project-img-animation 7s ease-in-out infinite;
+  }
   .project-info-title {
     text-align: left;
+    animation: project-title-animation 10s ease-in-out infinite;
   }
 
   .project-info-container {
@@ -128,5 +139,29 @@
 
   .project-box {
     justify-content: flex-end;
+  }
+}
+
+@keyframes project-img-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes project-title-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

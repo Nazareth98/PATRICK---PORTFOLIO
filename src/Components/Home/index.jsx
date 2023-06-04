@@ -16,7 +16,7 @@ const Home = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1650"
-          className="home-description"
+          className="home-description "
         >
           <p>
             Sou um Desenvolvedor buscando consolidar-se no mercado como
